@@ -21,4 +21,12 @@ def test_search_with_no_results(page):
     home.search("asdasdasdqweqwe")
 
     assert results.results_count() == 0
-    
+
+def test_search_with_empty_inputs(page):
+    home = HomePage(page)
+    results = ResultsPage(page)
+
+    home.open()
+    home.search("   ")
+
+    assert results.results_count() == 0
