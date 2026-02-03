@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Pytest
+.pytest_cache/
+
+# Virtual environments
+venv/
+.env/
+.v/
+
+# Playwright
+.playwright/
+
+# OS
+.DS_Store
+Thumbs.db
